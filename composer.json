@@ -1,0 +1,29 @@
+{
+    "name": "vagh/laravel-aliyun-mailer",
+    "description": "An Aliyun Mail SDK For Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VAGH",
+            "email": "yu@vagh.cn"
+        }
+    ],
+    "require": {
+        "alibabacloud/sdk": "^1.8",
+        "swiftmailer/swiftmailer": "^6.2",
+        "laravel/framework": "^6.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vagh\\LaravelAliyunMailer\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vagh\\LaravelAliyunMailer\\ServiceProvider"
+            ]
+        }
+    }
+}
